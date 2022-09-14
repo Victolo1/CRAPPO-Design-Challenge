@@ -1,0 +1,130 @@
+.features {
+  background-image: url(../images/circle-background.png),
+    url(../images/cta-background.png);
+  background-position: top left, right bottom;
+  // background-position-x: right;
+  // background-position-y: bottom;
+  background-size: 100, 20%;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+  background-color: $color-secondary-1;
+
+  &__box {
+    display: grid;
+
+    &--1 {
+      grid-template-columns: 1fr 1.3fr;
+
+      margin: 12rem 15rem;
+      gap: 14rem;
+
+      @media only screen and (max-width: 81.25em) {
+        margin: 10rem 10rem;
+      }
+
+      @media only screen and (max-width: 81.25em) {
+        margin: 10rem 5rem;
+      }
+
+      @media only screen and (max-width: 68.75em) {
+        gap: 9rem;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        margin: 10rem 1rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        display: flex;
+        flex-direction: column;
+        margin: 10rem 3rem;
+      }
+    }
+
+    &--2 {
+      grid-template-columns: 1fr 1fr;
+      gap: 9rem;
+      margin-right: 20rem;
+
+      @media only screen and (max-width: 81.25em) {
+        gap: 6rem;
+        margin-right: 12rem;
+      }
+
+      @media only screen and (max-width: 68.75em) {
+        margin-right: 5rem;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        margin-right: 1rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        margin-left: 3rem;
+      }
+    }
+
+    &--3 {
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
+      margin: 12rem 12rem 0 12rem;
+
+      @media only screen and (max-width: 81.25em) {
+        margin: 11rem 10rem 0 10rem;
+      }
+
+      @media only screen and (max-width: 68.75em) {
+        margin: 11rem 5rem 0 5rem;
+      }
+
+      @media only screen and (max-width: 62.5em) {
+        margin: 11rem 2rem 0 2rem;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        margin: 11rem 0 0 1rem;
+        gap: 3rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  &__text {
+    margin: 2.4rem 0 3.2rem 0;
+    color: $color-neutral-2;
+    letter-spacing: 0.01em;
+
+    @media only screen and (max-width: 81.25em) {
+      margin: 2rem 0 3.2rem 0;
+    }
+
+    &-box {
+      &--1 {
+      }
+
+      &--2 {
+        align-self: center;
+
+        @media only screen and (max-width: 50em) {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    &-box {
+    }
+  }
+}

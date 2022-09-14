@@ -1,0 +1,79 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 5rem;
+  gap: 8rem;
+  margin: 0 10rem; // 120px
+
+  @media only screen and (max-width: 81.25em) {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    margin: 5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 3rem; // 120px
+  }
+
+  &__text-box {
+    margin-top: 10rem;
+
+    @media only screen and (max-width: 50em) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__promo {
+    font-weight: $bold-1;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $color-neutral-1;
+    border-radius: $radius;
+    padding: 1.4rem 2.4rem 1.4rem 0;
+    margin-bottom: 2.4rem;
+    display: inline-block;
+    animation: moveInRight 2s;
+
+    &-perc {
+      font-weight: $bold-2;
+      background-color: $color-neutral-1;
+      color: $color-primary-1;
+      border-radius: $radius;
+      padding: 1rem 1.8rem;
+      margin-right: 1rem;
+      margin-left: 5px;
+      display: inline;
+    }
+  }
+
+  &__text {
+    margin: 2.4rem 0 3.2rem 0;
+    line-height: 2.8rem;
+    animation-name: moveUp;
+    animation-duration: 3s;
+  }
+
+  &__img {
+    width: 100%;
+    &-box {
+      // height: 100vh;
+      background-image: url(../images/hero-background-1.png),
+        url(../images/hero-background-1.png);
+      // background-image: url(../images/hero-background-2.png);
+      background-position: left bottom, right top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin-top: 5rem;
+      animation-name: rotate;
+      animation-duration: 4s;
+    }
+  }
+}

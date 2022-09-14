@@ -1,0 +1,54 @@
+.why {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  margin: 0 15rem;
+  margin-bottom: 7rem;
+
+  @media only screen and (max-width: 75em) {
+    margin: 0 10rem;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    margin: 0 7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+    margin: 0 3rem;
+    margin-bottom: 10rem;
+  }
+
+  &__img {
+    width: 100%;
+
+    &-box {
+      background-image: url(../images/why-background.png);
+      background-position-x: left;
+      background-position-y: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text {
+    margin-top: 2.4rem;
+    margin: 2.4rem 0 3.2rem 0;
+    line-height: 2.8rem;
+    &-box {
+      background-image: url(../images/u-background.png);
+      background-position-x: right;
+      background-position-y: bottom;
+      background-size: 25%;
+      background-repeat: no-repeat;
+      padding-top: 10rem;
+      padding-bottom: 20rem;
+
+      @media only screen and (max-width: 50em) {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem;
+}
+
+.mg-bt {
+  margin-bottom: 2.4rem;
+}
+
+.u-margin-top-large {
+  margin-top: 3.2rem;
+}
+
+.heading-blue {
+  color: #3e66fb;
+}
+
+.tx-al {
+  text-align: center;
+
+  // @media only screen and (max-width: 50em) {
+  //   text-align: left;
+  // }
+}
+
+.crypto-ter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.width-1 {
+  width: 74rem;
+
+  @media only screen and (max-width: 50em) {
+    width: 100%;
+  }
+}
+
+.width-2 {
+  width: 76rem;
+
+  @media only screen and (max-width: 50em) {
+    width: 100%;
+  }
+}
+
+.mg-ct {
+  margin: 0 auto;
+}
+
+.cl-pr {
+  color: #0d0d2b;
+}
+
+.tr-sub {
+  color: #bdbdbd;
+}

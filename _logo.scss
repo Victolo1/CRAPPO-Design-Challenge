@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  font-family: "Inter";
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &__link {
+    text-decoration: none;
+    color: $color-neutral-1;
+    animation: moveInLeft 2s;
+  }
+}

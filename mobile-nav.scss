@@ -1,0 +1,42 @@
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
+}
+
+.icon-mobile-nav {
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #fff;
+
+  &__close {
+    display: none;
+  }
+}
+
+.nav-open .nav {
+  @media only screen and (max-width: 50em) {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.nav-open .icon-mobile-nav__close {
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
+}
+
+.nav-open .icon-mobile-nav__open {
+  @media only screen and (max-width: 50em) {
+    display: none;
+  }
+}

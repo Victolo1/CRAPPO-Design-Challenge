@@ -1,0 +1,140 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  gap: 9rem; // Instead of 56px
+  font-size: 1.6rem;
+  margin-right: -6rem;
+  animation: moveInRight 3s;
+
+  @media only screen and (max-width: 62.5em) {
+    margin-right: 0;
+    gap: 5rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    margin-right: 0;
+    gap: 3.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: -10%;
+    background-color: rgba($color-primary-1, 1);
+    width: 120%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.8s ease-out;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  // @media only screen and (max-width:53.125em) {
+
+  // }
+
+  &__links {
+    list-style: none;
+
+    &--1 {
+      display: flex;
+      align-items: center;
+
+      gap: 5rem;
+
+      @media only screen and (max-width: 56.25em) {
+        gap: 3rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        flex-direction: column;
+        gap: 5rem;
+        font-size: 2.6rem;
+      }
+    }
+
+    &--2 {
+      display: flex;
+      align-items: center;
+
+      gap: 4rem;
+
+      @media only screen and (max-width: 56.25em) {
+        gap: 2rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        margin-top: 2rem;
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  &__link {
+    color: $color-neutral-1;
+
+    &-border {
+      border-right: 1px solid #f2f2f2;
+      padding-right: 3rem;
+    }
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      // color: #f0f3f9b9;
+    }
+
+    &-btn {
+      &:link,
+      &:visited {
+        display: inline-block;
+        background-color: $color-primary-2;
+        padding: 1.4rem 3.2rem;
+        border-radius: 3.2rem;
+        font-weight: 500;
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.899);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-sizing: 0 5px 1rem rgba(0, 0, 0, 0.2);
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3.2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-primary-2;
+        transition: all 0.4s;
+      }
+
+      &:hover::after {
+        transform: scaleX(1.4);
+        opacity: 0;
+      }
+    }
+  }
+}
